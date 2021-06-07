@@ -4,7 +4,7 @@
 Link to [canny.io page](https://cse110-lab10-will-chung.canny.io/).
 
 ## Part 2
-Link to [first split](https://will-chung.github.io/Lab10/).
+Link to [first split](https://will-chung.github.io/Lab10/index.html).
 
 Link to [second split](https://will-chung.github.io/Lab10/secondSplit.html).
 
