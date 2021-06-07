@@ -14,8 +14,8 @@
   <link rel="icon" href="./styles/favicon.ico">
 </head>
 
-<body class="dark-mode">
-  <header class="dark-mode">
+<body>
+  <header>
     <h1>Journal Entries</h1>
     <img src="./styles/settings.svg" alt="settings" width=40 height=40>
   </header>
@@ -53,13 +53,17 @@
       // And get the client instance you'll use
       var client = factory.client();
       client.on(client.Event.SDK_READY, function() {
-        var treatment = client.getTreatment("double-column");
+        var treatment = client.getTreatment("dark-mode");
         if (treatment == "on") {
-          document.querySelector('main').setAttribute('class', 'double-column');
+          document.querySelector('body').setAttribute('class', 'dark-mode');
+          document.querySelector('header').setAttribute('class', 'dark-mode');
+
         } else if (treatment == "off") {
-          document.querySelector('main').setAttribute('class', '');
+          document.querySelector('body').setAttribute('class', '');
+          document.querySelector('header').setAttribute('class', '');
         } else {
-          document.querySelector('main').setAttribute('class', '');
+          document.querySelector('body').setAttribute('class', '');
+          document.querySelector('header').setAttribute('class', '');
         }
       });
     })();
